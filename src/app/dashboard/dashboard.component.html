@@ -1,9 +1,43 @@
-<h2>Top Heroes</h2>
-<div class="heroes-menu">
-  <a *ngFor="let hero of heroes"
-      routerLink="/detail/{{hero.id}}">
-      {{hero.name}}
-  </a>
-</div>
 
-<app-hero-search></app-hero-search>
+  <div class="wrapper">
+
+  <div class="h2">
+    <h2 class="">Top Heroes</h2>
+  </div>
+  <app-hero-search class="serach-content"></app-hero-search>
+  <!-- <div class="d-flex rlat"> -->
+
+  <!-- </div> -->
+
+  <div class="heroes-menu" >
+    <!-- <a *ngFor="let hero of heroes"
+        routerLink="/detail/{{hero.id}}">
+        {{hero.name}}
+    </a> -->
+    <table class="table" >
+      <thead>
+        <tr>
+          <th scope="col">NAME</th>
+          <th scope="col">CHARACTER</th>
+          <th scope="col">HANDLE</th>
+          <th scope="col">ACTION</th>
+        </tr>
+      </thead>
+      <tbody >
+        <tr *ngFor="let hero of heroes">
+          <!-- <th scope="row">1</th> -->
+          <td>{{hero.name}}</td>
+          <td>{{hero.character}}</td>
+          <td>{{hero.handle}}</td>
+          <td>
+            <a class="view-more" routerLink="/detail/{{hero.id}}">
+              <!-- View More -->
+              <i class="fa fa-info"></i>
+            </a>
+            <!-- <i class="fa fa-info" aria-hidden="true"></i> -->
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

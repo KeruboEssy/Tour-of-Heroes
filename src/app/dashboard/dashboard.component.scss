@@ -1,0 +1,101 @@
+/* DashboardComponent's private CSS styles */
+.wrapper{
+
+}
+
+.serach-content {
+  display: flex;
+  justify-content: flex-end;
+}
+.h2 {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.2);
+  margin: 0;
+  height: 35px;
+  margin-left: -4px;
+  border-radius: 4px;
+  // margin:-100px 0px 0px 228px;
+}
+.rlat {
+  position: relative;
+}
+
+.heroes-menu {
+  visibility: visible;
+  padding: 0;
+  display: inline-flex;
+  width: 700px;
+
+  /* flexbox */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+
+a {
+  background-color: #3f525c;
+  border-radius: 10px;
+  padding: 1rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  min-width: 70px;
+  margin: .5rem auto;
+  box-sizing: border-box;
+
+  /* flexbox */
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+}
+
+@media (min-width: 600px) {
+  a {
+    width: 18%;
+    box-sizing: content-box;
+  }
+}
+
+a:hover {
+  background-color: black;
+}
+.view-more{
+  background-color: gray;
+  border-radius: 7px;
+  padding: 5px;
+}
+.table{
+  width: 100%;
+  margin-top: 15px;
+}
+thead tr{
+  display:flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+tbody tr{
+  display:flex;
+  justify-content: space-between;
+}
+thead tr th {
+  text-align: left;
+  width: 100px;
+}
+tbody tr td {
+  text-align: left;
+  width: 100px;
+}

@@ -1,0 +1,118 @@
+/* HeroSearch private styles */
+
+label {
+  display: block;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  margin-bottom: .5rem;
+  padding-top: 20px;
+}
+#search-component {
+  width: 270px;
+  margin-top: -78px;
+  // position: absolute;
+  // top: 0px;
+  // right: 159px;
+
+
+}
+
+.search-bar{
+  width: 270px;
+  height: 33px;
+  position: relative;
+}
+
+input {
+  padding: .5rem;
+  width: 100%;
+  max-width: 600px;
+  box-sizing: border-box;
+  display: block;
+  border: #435A60 2px;
+}
+
+input:focus {
+  outline: #336699 auto 1px;
+}
+
+li {
+  list-style-type: none;
+}
+.search-result {
+  width: 100%;
+  padding: 0;
+}
+.search-result li {
+  width: 100%;
+
+}
+.search-result li a {
+  border-bottom: 1px solid gray;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+  background-color: white;
+  display: inline-block;
+  width: 100%;
+  padding: .5rem;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: black;
+}
+
+.search-result li a:hover {
+  background-color: #435A60;
+  color: white;
+}
+
+.searchicon{
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+#search-box{
+  // margin: -131px 0px 0px 690px;
+  padding: 6px;
+  width: 100%;
+  height: 100%;
+  background-color:gainsboro ;
+  border-radius: 1em;
+  margin-right: 16px;
+  font-size: 17px; 
+  justify-content: end;
+}
+.fa-search{
+  position: absolute;
+  top: 50%;
+  
+  opacity: .7;
+}
+@media screen and (max-width: 576px) {
+  #search-box{
+    float:inline-start;
+    padding: 6px;
+    width: 100%;
+    background-color:gainsboro ;
+    border-radius: 1em;
+    margin-right: 16px;
+    font-size: 17px;
+  }
+  .fa-search{
+    position: absolute;
+    margin-left: 275px;
+    margin-top: -26px;
+  }
+#search-component{
+  position: relative;
+  // width: 500px;
+  // margin: 40px;
+  // height: 48px;
+}
+
+
+  
+  
+}

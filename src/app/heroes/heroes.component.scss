@@ -1,0 +1,136 @@
+/* HeroesComponent's private CSS styles */
+.heroes {
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: .5rem;
+  margin: 1rem 0;
+  box-sizing: border-box;
+}
+
+.heroes li {
+  margin-top: -13px;
+  position: relative;
+  cursor: pointer;
+}
+
+.heroes li:hover {
+  left: .1em;
+}
+
+.heroes a {
+  display: flex;
+  align-items: center;
+  color: #333;
+  text-decoration: none;
+  background-color: #EEE;
+  margin: .5em;
+  margin-bottom: 0;
+  margin-top: 0;
+  height: 100%;
+  border-radius: 4px;
+  // display: block;
+  width: 100%;
+}
+
+.heroes a:hover {
+  color: #2c3a41;
+  background-color: #e6e6e6;
+}
+
+.heroes a:active {
+  background-color: #525252;
+  color: #fafafa;
+}
+.badge-container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.heroes .badge {
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: small;
+  color: white;
+  width: 50px; 
+  height: 50px; 
+  border-radius: 5px;
+  background-color: #405061;
+  text-align: center;
+}
+
+.add-button {
+//  padding: .5rem 1.5rem;
+ font-size: 1rem;
+ width: 100px;
+ height: 45px;
+ box-sizing: border-box;
+ border-radius: 5px;
+}
+
+.item {
+  width: 100%;
+  padding: 0px;
+  height: 100%;
+  // background-color: #EEE;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.add-button:hover {
+  color: white;
+  background-color: #42545C;
+}
+
+button .delete {
+  height: 50px;
+  background-color: white;
+  color:  #525252;
+  font-size: 1.1rem;
+  margin-right: 3px;
+  // padding: 1px 10px 3px 10px;
+  border-radius: 9px;
+  border-color: 2px blue;
+}
+
+button.delete:hover {
+  background-color: #525252;
+  color: red;
+}
+#new-hero{
+  width: 70%;
+  // border-radius: 5px;
+}
+.mybody {
+  width: 700px;
+}
+.center-me {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+} 
+.content {
+  width: 100%;
+  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  border-radius: 10px;
+}
+.search-head {
+  display: flex;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;   
+
+}
+
